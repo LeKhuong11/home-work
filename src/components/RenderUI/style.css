@@ -1,0 +1,27 @@
+.products {
+    width: 50%;
+    height: 350px;
+    display: flex;
+    margin: 15px;
+    text-align: center;
+    background-color: #fff;
+    border-radius: 7px;
+    box-shadow: 5px 10px 25px #bbbaba;
+}
+.products p {
+    width: 85%;
+    text-align: justify;
+}
+.products div {
+    width: 50%;
+}
+.products button {
+    width: 100px;
+    height: 40px;
+    border-radius: 20px;
+    background-color: rgb(96, 221, 179);
+    color: #fff;
+    border: none;
+    margin-left: 10px;
+}
+
