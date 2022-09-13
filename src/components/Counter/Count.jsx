@@ -8,13 +8,23 @@ class Count extends Component {
         this.state = {
             count: 1
         }
+        this.handleIncrease = () => {
+            this.setState({
+                count: this.state.count + 1
+            })
+        }
+        this.handleDecrease = () => {
+            this.setState({
+                count: this.state.count - 1
+            })
+        }
     }
 
     render() {
         return (
             <div>
                 <h1>Value: {this.state.count}</h1>
-                <button onClick={() => this.setState({count: this.state.count + 1})}>Increase</button>
+                <button onClick={this.handleIncrease}>Increase</button>
                 <button onClick={() => this.setState({count: this.state.count - 1})}>Decrease</button>
             </div>
         );
